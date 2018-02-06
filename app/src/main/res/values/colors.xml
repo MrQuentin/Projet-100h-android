@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/basic_cyan</color>
+    <color name="colorPrimaryDark">@color/basic_cyan_dark</color>
+    <color name="colorAccent">@color/grey</color>
+
+    <color name="basic_cyan">#406470</color>
+    <color name="basic_cyan_dark">#36545E</color>
+    <color name="basic_red">#CF4940</color>
+    <color name="basic_red_light">#ED5D55</color>
+    <color name="basic_red_dark">#A13932</color>
+    <color name="grey">#D3CFC6</color>
+
+</resources>
