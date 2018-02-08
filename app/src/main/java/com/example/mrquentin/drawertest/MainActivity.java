@@ -13,12 +13,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 import android.widget.TextView;
 
-import com.example.mrquentin.drawertest.Fragments.BluetoothFragment;
-import com.example.mrquentin.drawertest.Fragments.DashboardFragment;
-import com.example.mrquentin.drawertest.Fragments.HomeFragment;
+import com.example.mrquentin.drawertest.Navigation.BluetoothFragment;
+import com.example.mrquentin.drawertest.Navigation.DashboardFragment;
+import com.example.mrquentin.drawertest.Navigation.HomeFragment;
+import com.example.mrquentin.drawertest.Dialogs.Fragments.BasicTextDialogFragment;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -116,8 +116,12 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
+
         if (id == R.id.nav_home) {
             System.out.println("Nav Follow");
+            FragmentManager fm = getSupportFragmentManager();
+            BasicTextDialogFragment editNameDialogFragment = BasicTextDialogFragment.newInstance("Nav Home");
+            editNameDialogFragment.show(fm, "fragment_sample_dialog");
         } else if (id == R.id.nav_recent) {
             System.out.println("Nav Recent");
         } else if (id == R.id.nav_settings) {
