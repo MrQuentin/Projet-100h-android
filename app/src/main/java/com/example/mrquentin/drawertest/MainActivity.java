@@ -15,6 +15,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
 
+import com.example.mrquentin.drawertest.Dialogs.DialogHandler;
 import com.example.mrquentin.drawertest.Navigation.BluetoothFragment;
 import com.example.mrquentin.drawertest.Navigation.DashboardFragment;
 import com.example.mrquentin.drawertest.Navigation.HomeFragment;
@@ -119,9 +120,9 @@ public class MainActivity extends AppCompatActivity
 
         if (id == R.id.nav_home) {
             System.out.println("Nav Follow");
-            FragmentManager fm = getSupportFragmentManager();
-            BasicTextDialogFragment editNameDialogFragment = BasicTextDialogFragment.newInstance("Nav Home");
-            editNameDialogFragment.show(fm, "fragment_sample_dialog");
+            //create a BasicTextDialog
+            new DialogHandler().showBasicTextDialog("Navigation Home !", getResources().getString(R.string.help), getSupportFragmentManager());
+
         } else if (id == R.id.nav_recent) {
             System.out.println("Nav Recent");
         } else if (id == R.id.nav_settings) {
@@ -136,8 +137,8 @@ public class MainActivity extends AppCompatActivity
             System.out.println("Nav My Work");
         }
 
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-        drawer.closeDrawer(GravityCompat.START);
+        //DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        //drawer.closeDrawer(GravityCompat.START);
         return true;
     }
 
