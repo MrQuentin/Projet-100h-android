@@ -3,13 +3,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="navigation_view">
 
-    <item
-        android:id="@+id/nav_home"
-        android:icon="@drawable/logo_btw"
-        android:title="@string/home" />
-
-    <item android:title="@string/group_option">
-        <menu>
             <item
                 android:id="@+id/nav_recent"
                 android:icon="@drawable/ic_schedule_black_24dp"
@@ -35,7 +28,5 @@
                 android:icon="@drawable/ic_directions_black_24dp"
                 android:title="@string/work" />
 
-        </menu>
-    </item>
 
 </menu>

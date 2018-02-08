@@ -118,12 +118,7 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-
-        if (id == R.id.nav_home) {
-
-            new DialogHandler().showBasicTextDialog("Navigation Home !", getResources().getString(R.string.help), getSupportFragmentManager());
-
-        } else if (id == R.id.nav_recent) {
+        if (id == R.id.nav_recent) {
             new DialogHandler().showBasicTextDialog("Recent", "Recent content", getSupportFragmentManager());
         } else if (id == R.id.nav_settings) {
             new DialogHandler().showBasicTextDialog("Settings", "settings content", getSupportFragmentManager());
@@ -137,6 +132,7 @@ public class MainActivity extends AppCompatActivity
             new DialogHandler().showBasicTextDialog("My Work", "My work content here", getSupportFragmentManager());
         }
 
+        //close drawer onclick
         //DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         //drawer.closeDrawer(GravityCompat.START);
         return true;
