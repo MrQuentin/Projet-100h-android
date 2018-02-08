@@ -57,6 +57,7 @@ public class MainActivity extends AppCompatActivity
         toggle.syncState();
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
+        navigationView.setItemIconTintList(null);
         navigationView.setNavigationItemSelectedListener(this);
 
         /*==========================================================================================
@@ -119,22 +120,21 @@ public class MainActivity extends AppCompatActivity
 
 
         if (id == R.id.nav_home) {
-            System.out.println("Nav Follow");
-            //create a BasicTextDialog
+
             new DialogHandler().showBasicTextDialog("Navigation Home !", getResources().getString(R.string.help), getSupportFragmentManager());
 
         } else if (id == R.id.nav_recent) {
-            System.out.println("Nav Recent");
+            new DialogHandler().showBasicTextDialog("Recent", "Recent content", getSupportFragmentManager());
         } else if (id == R.id.nav_settings) {
-            System.out.println("Nav Settings");
+            new DialogHandler().showBasicTextDialog("Settings", "settings content", getSupportFragmentManager());
         } else if (id == R.id.nav_help) {
-            System.out.println("Nav Help");
+            new DialogHandler().showBasicTextDialog("Help", "Help content here", getSupportFragmentManager());
         } else if (id == R.id.nav_about) {
-            System.out.println("Nav About");
+            new DialogHandler().showBasicTextDialog("About", "About content here", getSupportFragmentManager());
         } else if (id == R.id.nav_house) {
-            System.out.println("Nav My House");
+            new DialogHandler().showBasicTextDialog("My Home", "My Home Content here", getSupportFragmentManager());
         } else if (id == R.id.nav_work) {
-            System.out.println("Nav My Work");
+            new DialogHandler().showBasicTextDialog("My Work", "My work content here", getSupportFragmentManager());
         }
 
         //DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
