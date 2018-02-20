@@ -97,14 +97,14 @@ public class MainActivity extends AppCompatActivity
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
+        // automatically handle clicks on the home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
+//        if (id == R.id.action_settings) {
+//            return true;
+//        }
 
         return super.onOptionsItemSelected(item);
     }
@@ -119,7 +119,7 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_recent) {
-            new DialogHandler().showBasicTextDialog("Recent", "Recent content", getSupportFragmentManager());
+            new DialogHandler().showBasicTextDialog("recent", "recent content", getSupportFragmentManager());
         } else if (id == R.id.nav_settings) {
             new DialogHandler().showBasicTextDialog("Settings", "settings content", getSupportFragmentManager());
         } else if (id == R.id.nav_help) {
@@ -127,9 +127,9 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_about) {
             new DialogHandler().showBasicTextDialog("About", "About content here", getSupportFragmentManager());
         } else if (id == R.id.nav_house) {
-            new DialogHandler().showBasicTextDialog("My Home", "My Home Content here", getSupportFragmentManager());
+            new DialogHandler().showBasicTextDialog("My home", "My home Content here", getSupportFragmentManager());
         } else if (id == R.id.nav_work) {
-            new DialogHandler().showBasicTextDialog("My Work", "My work content here", getSupportFragmentManager());
+            new DialogHandler().showBasicTextDialog("My work", "My work content here", getSupportFragmentManager());
         }
 
         //close drawer onclick
@@ -157,7 +157,7 @@ public class MainActivity extends AppCompatActivity
             switch (item.getItemId()) {
 
                 case R.id.navigation_home:
-                    System.out.println("NavBar Home");
+                    System.out.println("NavBar home");
                     fragmentClass = HomeFragment.class;
                     break;
                 case R.id.navigation_dashboard:
