@@ -20,11 +20,11 @@ void setup() {
   blinkTimer.begin(1000,blink_timer_callback);
   blinkTimer.start();
 
-  Bluefruit.autoConnLed(false);
+  Bluefruit.autoConnLed(true);
   Bluefruit.configPrphBandwidth(BANDWIDTH_MAX);
   Bluefruit.begin();
   Bluefruit.setTxPower(4);// Set max power. Accepted values are: -40, -30, -20, -16, -12, -8, -4, 0, 4
-  Bluefruit.setName("Bluefruit52");
+  Bluefruit.setName("Bike The Way");
   Bluefruit.setConnectCallback(connect_callback);
   Bluefruit.setDisconnectCallback(disconnect_callback);
 
