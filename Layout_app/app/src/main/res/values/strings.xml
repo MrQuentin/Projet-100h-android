@@ -23,5 +23,6 @@
     <string name="About">About</string>
     <string name="house">My House</string>
     <string name="work">My Work</string>
+    <string name="title_activity_spl">SplActivity</string>
 
 </resources>

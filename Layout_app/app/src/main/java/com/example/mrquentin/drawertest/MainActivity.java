@@ -1,76 +1,78 @@
 package com.example.mrquentin.drawertest;
 
+import android.Manifest;
+import android.bluetooth.BluetoothAdapter;
+import android.bluetooth.BluetoothDevice;
+import android.bluetooth.BluetoothGatt;
+import android.bluetooth.BluetoothGattCharacteristic;
+import android.bluetooth.BluetoothManager;
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.location.LocationManager;
 import android.os.Bundle;
+import android.os.Handler;
+import android.provider.Settings;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
+import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.design.widget.NavigationView;
+import android.support.v4.content.ContextCompat;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.text.Layout;
 import android.util.Log;
-import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.EditText;
-import android.widget.ImageView;
-import android.widget.LinearLayout;
+import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.bumptech.glide.Glide;
-import com.bumptech.glide.request.RequestOptions;
 import com.example.mrquentin.drawertest.Dialogs.DialogHandler;
 import com.example.mrquentin.drawertest.Navigation.BluetoothFragment;
 import com.example.mrquentin.drawertest.Navigation.DashboardFragment;
 import com.example.mrquentin.drawertest.Navigation.HomeFragment;
 import com.example.mrquentin.drawertest.Dialogs.Fragments.BasicTextDialogFragment;
-import com.google.android.gms.auth.api.signin.GoogleSignIn;
-import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
-import com.google.android.gms.auth.api.signin.GoogleSignInClient;
-import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
-import com.google.android.gms.common.api.ApiException;
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.Task;
-import com.google.firebase.auth.AuthCredential;
-import com.google.firebase.auth.AuthResult;
-import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
-import com.google.firebase.auth.GoogleAuthProvider;
 
-import static android.content.ContentValues.TAG;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
+import java.util.UUID;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
-    //User data
-    private static final int RC_SIGN_IN = 658;
-    private static ImageView imageUser;
-    private static TextView textEmail;
-    private FirebaseAuth mAuth = FirebaseAuth.getInstance();
-    private static TextView textUserName;
-    private GoogleSignInClient mGoogleSignInClient;
+
+    private String TAG = MainActivity.class.getSimpleName();
+
+    private BluetoothAdapter mBluetoothAdapter;
+    private boolean mScanning;
+    private Handler mHandler;
+
+    private Map<String, BluetoothDevice> bluetoothDeviceList = new HashMap<>();
+
+    private static final long SCAN_PERIOD = 5000;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        //setTheme(R.style.NoActionBar);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         toolbar.setTitle("");//remove app title
         setSupportActionBar(toolbar);
 
-
-
-        /*==========================================================================================
+     /*==========================================================================================
                                           Floating action button
-         =========================================================================================*/
+      ==========================================================================================*/
 
 
 //        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
@@ -82,9 +84,9 @@ public class MainActivity extends AppCompatActivity
 //            }
 //        });
 
-        /*==========================================================================================
+     /*==========================================================================================
                                                  Drawer
-         =========================================================================================*/
+      =========================================================================================*/
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -105,123 +107,18 @@ public class MainActivity extends AppCompatActivity
         FragmentManager fragmentManager = getSupportFragmentManager();
         fragmentManager.beginTransaction().replace(R.id.flContent, new HomeFragment()).commit();
 
-        /*========================================================================================
-        *                                   Connexion User onCreate
-        * ========================================================================================*/
+     /*==============================================================================================
+                                                    BLE
+     =============================================================================================*/
 
-        GoogleSignInOptions gso= new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
-                .requestIdToken(getString(R.string.default_web_client_id))
-                .requestEmail()
-                .build();
-        mGoogleSignInClient = GoogleSignIn.getClient(this,gso);
-        signIn();
-        if (mAuth.getCurrentUser() != null  ) {
-        /*=========================================================================================
-        * Gestion affichage image + email utilisateur*/
-            //gestion data user
+     final BluetoothManager bluetoothManager = (BluetoothManager) getSystemService(Context.BLUETOOTH_SERVICE);
+     mBluetoothAdapter = bluetoothManager.getAdapter();
 
-            View headerView = navigationView.getHeaderView(0);
-            imageUser = (ImageView) headerView.findViewById(R.id.imageViewUser);
-            textUserName = (TextView)headerView.findViewById(R.id.textViewUserName);
-            textEmail = (TextView) headerView.findViewById(R.id.textViewEmailUser);
-
-
-
-            FirebaseUser user = mAuth.getCurrentUser();
-            // get le userName et l'email
-
-            textEmail.setText(user.getEmail());
-            textUserName.setText(user.getDisplayName());
-            // target l'image dans le header du menu
-            RequestOptions requestOptions = new RequestOptions();
-            // target l'image par défaut
-            requestOptions.placeholder(R.mipmap.ic_launcher_round);
-            // arrondi l'image
-            requestOptions.circleCrop();
-            // si erreur, remet l'image par défaut
-            requestOptions.error(R.mipmap.ic_launcher_round);
-
-            //essai d'écrasement de l'image par défaut par l'image utilisateur
-
-            Glide.with(this)
-                    .load(user.getPhotoUrl())
-                    .apply(requestOptions)
-                    .thumbnail(0.5f)
-                    .into(imageUser);
-        }else {
-            Toast.makeText(this, "Vous devez être connecté pour utiliser l'application", Toast.LENGTH_SHORT).show();
-        }
-         /*=========================================================================================*/
     }
 
-    /*===============================================================================================
-    *                                          Authentification du compte google avec firebase
-    * ==============================================================================================*/
 
 
-    private void firebaseAuthWithGoogle(GoogleSignInAccount acct) {
-        Log.d(TAG, "firebaseAuthWithGoogle:" + acct.getId());
 
-        AuthCredential credential = GoogleAuthProvider.getCredential(acct.getIdToken(), null);
-        mAuth.signInWithCredential(credential)
-                .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
-                    @Override
-                    public void onComplete(@NonNull Task<AuthResult> task) {
-                        if (task.isSuccessful()) {
-                            // Sign in success, update UI with the signed-in user's information
-
-                            FirebaseUser user = mAuth.getCurrentUser();
-                            String userUID = mAuth.getUid();
-                            Toast.makeText(MainActivity.this, "User signed in", Toast.LENGTH_SHORT).show();
-
-                        } else {
-                            // If sign in fails, display a message to the user.
-                            Log.w(TAG, "signInWithCredential:failure", task.getException());
-                            Toast.makeText(MainActivity.this, "Authentification failed", Toast.LENGTH_SHORT).show();
-                        }
-
-                        // ...
-                    }
-                });
-    }
-    /*===============================================================================================
-    *                                          onStart vérification Compte Google
-    * ==============================================================================================*/
-
-    private void signIn() {
-        Intent signInIntent = mGoogleSignInClient.getSignInIntent();
-        startActivityForResult(signInIntent, RC_SIGN_IN);
-    }
-
-    @Override
-    protected void onStart() {
-        super.onStart();
-        if (mAuth.getCurrentUser() != null){
-            Toast.makeText(this, "User already connected", Toast.LENGTH_SHORT).show();
-
-           // startActivity(new Intent(this, ProfileActivity.class));
-        }
-    }
-    /*============================================================================================
-    *                                                  onActivityResult gestion connexion compte google
-    * =============================================================================================*/
-    @Override
-    public void onActivityResult(int requestCode, int resultCode, Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
-        // Result returned from launching the Intent from GoogleSignInApi.getSignInIntent(...);
-        if (requestCode == RC_SIGN_IN) {
-            Task<GoogleSignInAccount> task = GoogleSignIn.getSignedInAccountFromIntent(data);
-            try {
-                // Google Sign In was successful, authenticate with Firebase
-                GoogleSignInAccount account = task.getResult(ApiException.class);
-                firebaseAuthWithGoogle(account);
-            } catch (ApiException e) {
-                // Google Sign In failed, update UI appropriately
-                Toast.makeText(this, e.getMessage(), Toast.LENGTH_SHORT).show();
-                // ...
-            }
-        }
-    }
     /*==============================================================================================
                                                 Drawer Button
      =============================================================================================*/
@@ -290,9 +187,10 @@ public class MainActivity extends AppCompatActivity
         return true;
     }
 
+
     /*==============================================================================================
-                                         Navigation
-    ==============================================================================================*/
+                                             Navigation
+        ==============================================================================================*/
     private TextView mTextMessage;
 
 
@@ -310,27 +208,38 @@ public class MainActivity extends AppCompatActivity
 
                 case R.id.navigation_home:
                     System.out.println("NavBar home");
-                    fragmentClass = HomeFragment.class;
+                    try {
+                        fragment = (Fragment) HomeFragment.class.newInstance();
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
                     break;
                 case R.id.navigation_dashboard:
                     System.out.println("Nav DashBoard");
-                    fragmentClass = DashboardFragment.class;
+                    try {
+                        fragment = (Fragment) DashboardFragment.class.newInstance();
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
                     break;
                 case R.id.navigation_bluetooth:
                     System.out.println("Nav Bluetooth");
-                    fragmentClass = BluetoothFragment.class;
+                    try {
+                        fragment = (Fragment) BluetoothFragment.newIntance(mBluetoothAdapter);
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
                     break;
                 default:
                     System.out.println("Default");
-                    fragmentClass = HomeFragment.class;
+                    try {
+                        fragment = (Fragment) HomeFragment.class.newInstance();
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
                     return false;
             }
-            
-            try {
-                fragment = (Fragment) fragmentClass.newInstance();
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
+
 
             FragmentManager fragmentManager = getSupportFragmentManager();
             fragmentManager.beginTransaction().replace(R.id.flContent, fragment).commit();

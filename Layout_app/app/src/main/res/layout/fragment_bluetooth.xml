@@ -1,16 +1,9 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?>
+<ListView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/list"
     android:layout_width="match_parent"
-    android:layout_height="453dp"
+    android:layout_height="match_parent"
     tools:context="com.example.mrquentin.drawertest.Navigation.BluetoothFragment">
-
-
-    <TextView
-        android:id="@+id/imageView2"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:text="Bluetooth Fag" />
-
-</LinearLayout>
-
+</ListView>

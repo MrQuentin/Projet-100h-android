@@ -57,37 +57,27 @@ void startAdv(void){
 }
 
 void loop() {
-
-  while(Serial.available()){                     //envoie de donnees
-    delay(2);
-    uint8_t buf[64];
-    int count = Serial.readBytes(buf,sizeof(buf));
-    Serial.print("TX: ");
-    for(int i=0; i<count; i++){Serial.print((char)buf[i]);}
-    Serial.println();
-    bleuart.write(buf,count);
+  if (bleuart.available()){
+    int command = bleuart.read();
+    switch(command){
+      case 'D': {
+        setDirection();
+        break;
+      }
+      case 'L': {
+        setDistance();
+        break;
+      }
+    }
   }
- 
-  while(bleuart.available()){                   //recuperation de donnees
-    uint8_t ch;
-    ch = (uint8_t) bleuart.read();
-    analyseData(ch);
-    //Serial.write(ch);
-  }
-  waitForEvent();                               // Request CPU to enter low-power mode until an event/interrupt occurs
-
 }
 
-uint8_t analyseData(uint8_t data){
-  if(data != 10){
-    recievedStr = recievedStr + (char)data;
-    char str [2];
-    sprintf(str,"%x",data);
-    recievedHex = recievedHex + str[0] + str[1] + " ";
-  }else{
-    Serial.println("RX: " + recievedStr + " (" + recievedHex + ")");
-    recievedHex, recievedStr = "";
-  }
+void setDirection(){
+  Serial.printf("setDirection : color(%d, %d, %d)\n", bleuart.read(), bleuart.read(), bleuart.read());
+  
+}
+void setDistance(){
+  Serial.println("setDistance");
 }
 
 void connect_callback(uint16_t conn_handle){
@@ -111,4 +101,6 @@ void blink_timer_callback(TimerHandle_t xTimerID)
   (void) xTimerID;
   //digitalToggle(LED_RED);
 }
+
+
 

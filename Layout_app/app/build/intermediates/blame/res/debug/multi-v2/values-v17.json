@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\Work\\ITI\\Projet\\BTW\\1erRendu\\Projet-100h-android\\Layout_app\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v17\\values-v17.xml",
+            "outputFile": "C:\\Users\\MrQuentin\\AndroidStudioProjects\\Projet 100h\\Layout_app\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v17\\values-v17.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\L'empapaouteur\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\dcd904b944d3350c90223e0bb5632d55\\res\\values-v17\\values-v17.xml",
+                    "source": "C:\\Users\\MrQuentin\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\a55d47cfee61aba4de66769d52606fc6\\res\\values-v17\\values-v17.xml",
                     "from": {
                         "startLines": "2,5,9,12,15,18,22,26,29,32,35,39,42,46",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",

@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\Work\\ITI\\Projet\\BTW\\1erRendu\\Projet-100h-android\\Layout_app\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-en-rIN\\values-en-rIN.xml",
+            "outputFile": "C:\\Users\\MrQuentin\\AndroidStudioProjects\\Projet 100h\\Layout_app\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-en-rIN\\values-en-rIN.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\L'empapaouteur\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\dcd904b944d3350c90223e0bb5632d55\\res\\values-en-rIN\\values-en-rIN.xml",
+                    "source": "C:\\Users\\MrQuentin\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\a55d47cfee61aba4de66769d52606fc6\\res\\values-en-rIN\\values-en-rIN.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
