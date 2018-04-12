@@ -14,7 +14,7 @@
         android:roundIcon="@drawable/logo_btw"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SplActivity"
+        <activity android:name=".SplashActivity.SplActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -25,6 +25,7 @@
         <activity android:name=".MainActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".BluetoothTabActivity"/>
     </application>
 
 </manifest>

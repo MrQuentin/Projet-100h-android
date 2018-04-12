@@ -1,12 +1,18 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\MrQuentin\AndroidStudioProjects\Projet 100h\Layout_app\app\src\main\AndroidManifest.xml:2:1-30:12
-INJECTED from C:\Users\MrQuentin\AndroidStudioProjects\Projet 100h\Layout_app\app\src\main\AndroidManifest.xml:2:1-30:12
-INJECTED from C:\Users\MrQuentin\AndroidStudioProjects\Projet 100h\Layout_app\app\src\main\AndroidManifest.xml:2:1-30:12
-INJECTED from C:\Users\MrQuentin\AndroidStudioProjects\Projet 100h\Layout_app\app\src\main\AndroidManifest.xml:2:1-30:12
+ADDED from C:\Users\MrQuentin\AndroidStudioProjects\Projet 100h\Layout_app\app\src\main\AndroidManifest.xml:2:1-31:12
+INJECTED from C:\Users\MrQuentin\AndroidStudioProjects\Projet 100h\Layout_app\app\src\main\AndroidManifest.xml:2:1-31:12
+INJECTED from C:\Users\MrQuentin\AndroidStudioProjects\Projet 100h\Layout_app\app\src\main\AndroidManifest.xml:2:1-31:12
+INJECTED from C:\Users\MrQuentin\AndroidStudioProjects\Projet 100h\Layout_app\app\src\main\AndroidManifest.xml:2:1-31:12
 MERGED from [com.android.support:design:26.1.0] C:\Users\MrQuentin\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\78a61685a1f7901c53f4202121afb4b8\AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\MrQuentin\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\a55d47cfee61aba4de66769d52606fc6\AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:transition:26.1.0] C:\Users\MrQuentin\.gradle\caches\transforms-1\files-1.1\transition-26.1.0.aar\4ac868cb41c38e09028a30d74e294ff8\AndroidManifest.xml:17:1-28:12
+MERGED from [com.google.android.gms:play-services-places:12.0.0] C:\Users\MrQuentin\.gradle\caches\transforms-1\files-1.1\play-services-places-12.0.0.aar\bfb15b05b1c9e5e4d4ee3e5fbd7a796c\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-maps:12.0.0] C:\Users\MrQuentin\.gradle\caches\transforms-1\files-1.1\play-services-maps-12.0.0.aar\37ca6e8601fc661a11b13b10eb79a31b\AndroidManifest.xml:17:1-32:12
+MERGED from [com.google.android.gms:play-services-location:12.0.0] C:\Users\MrQuentin\.gradle\caches\transforms-1\files-1.1\play-services-location-12.0.0.aar\c4faba466c196c32cb2ae407093903c9\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-base:12.0.0] C:\Users\MrQuentin\.gradle\caches\transforms-1\files-1.1\play-services-base-12.0.0.aar\70f9ec01ba5af9031e2b74fab49886fe\AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.android.gms:play-services-tasks:12.0.0] C:\Users\MrQuentin\.gradle\caches\transforms-1\files-1.1\play-services-tasks-12.0.0.aar\43ff73575c4790f5868694962f6b0d85\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-basement:12.0.0] C:\Users\MrQuentin\.gradle\caches\transforms-1\files-1.1\play-services-basement-12.0.0.aar\e5f0f54b102d7dac9ada31c1ca3a82e3\AndroidManifest.xml:17:1-28:12
 MERGED from [com.android.support:support-v4:26.1.0] C:\Users\MrQuentin\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\23bb214eabf39961e90a442befc14f8f\AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\MrQuentin\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\11f1a9c44858fea4e279c429cdd96f54\AndroidManifest.xml:2:1-11:12
 MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\MrQuentin\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\129a648350d85c0928617cc49d720b26\AndroidManifest.xml:17:1-28:12
@@ -17,21 +23,27 @@ MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\MrQuentin\.
 MERGED from [com.android.support:recyclerview-v7:26.1.0] C:\Users\MrQuentin\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.1.0.aar\1cf0c25f404321ea6898f917ee6fbef9\AndroidManifest.xml:17:1-28:12
 MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\MrQuentin\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\304e83a16b6dc437416f387dc9899df6\AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:support-compat:26.1.0] C:\Users\MrQuentin\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\e4d2de591de1f8826ac202f0d1ee5006\AndroidManifest.xml:17:1-31:12
+MERGED from [com.google.android.gms:play-services-maps-license:12.0.0] C:\Users\MrQuentin\.gradle\caches\transforms-1\files-1.1\play-services-maps-license-12.0.0.aar\455c6eb8a5c9a00d137279e7f4043de1\AndroidManifest.xml:2:1-8:12
+MERGED from [com.google.android.gms:play-services-location-license:12.0.0] C:\Users\MrQuentin\.gradle\caches\transforms-1\files-1.1\play-services-location-license-12.0.0.aar\d984b1f339c16dc36583c07569871b4f\AndroidManifest.xml:2:1-8:12
+MERGED from [com.google.android.gms:play-services-places-license:12.0.0] C:\Users\MrQuentin\.gradle\caches\transforms-1\files-1.1\play-services-places-license-12.0.0.aar\d9e2b54924a2c74d3cad3453adf7c8aa\AndroidManifest.xml:2:1-8:12
 MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\MrQuentin\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\d538c328c63afeeefe49b630ad158ca4\AndroidManifest.xml:17:1-30:12
-INJECTED from C:\Users\MrQuentin\AndroidStudioProjects\Projet 100h\Layout_app\app\src\main\AndroidManifest.xml:2:1-30:12
-INJECTED from C:\Users\MrQuentin\AndroidStudioProjects\Projet 100h\Layout_app\app\src\main\AndroidManifest.xml:2:1-30:12
-INJECTED from C:\Users\MrQuentin\AndroidStudioProjects\Projet 100h\Layout_app\app\src\main\AndroidManifest.xml:2:1-30:12
+MERGED from [com.google.android.gms:play-services-base-license:12.0.0] C:\Users\MrQuentin\.gradle\caches\transforms-1\files-1.1\play-services-base-license-12.0.0.aar\6c19aa99c4c54ca2a287731bb19d43bc\AndroidManifest.xml:2:1-8:12
+MERGED from [com.google.android.gms:play-services-basement-license:12.0.0] C:\Users\MrQuentin\.gradle\caches\transforms-1\files-1.1\play-services-basement-license-12.0.0.aar\d935a2edbe66b4b97c1f925f606c57e6\AndroidManifest.xml:2:1-8:12
+MERGED from [com.google.android.gms:play-services-tasks-license:12.0.0] C:\Users\MrQuentin\.gradle\caches\transforms-1\files-1.1\play-services-tasks-license-12.0.0.aar\6d04094eb24c33c59d499ace559c12de\AndroidManifest.xml:2:1-8:12
+INJECTED from C:\Users\MrQuentin\AndroidStudioProjects\Projet 100h\Layout_app\app\src\main\AndroidManifest.xml:2:1-31:12
+INJECTED from C:\Users\MrQuentin\AndroidStudioProjects\Projet 100h\Layout_app\app\src\main\AndroidManifest.xml:2:1-31:12
+INJECTED from C:\Users\MrQuentin\AndroidStudioProjects\Projet 100h\Layout_app\app\src\main\AndroidManifest.xml:2:1-31:12
 	package
 		ADDED from C:\Users\MrQuentin\AndroidStudioProjects\Projet 100h\Layout_app\app\src\main\AndroidManifest.xml:3:5-47
 		INJECTED from C:\Users\MrQuentin\AndroidStudioProjects\Projet 100h\Layout_app\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\MrQuentin\AndroidStudioProjects\Projet 100h\Layout_app\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\MrQuentin\AndroidStudioProjects\Projet 100h\Layout_app\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\MrQuentin\AndroidStudioProjects\Projet 100h\Layout_app\app\src\main\AndroidManifest.xml:2:1-30:12
+		ADDED from C:\Users\MrQuentin\AndroidStudioProjects\Projet 100h\Layout_app\app\src\main\AndroidManifest.xml:2:1-31:12
 		INJECTED from C:\Users\MrQuentin\AndroidStudioProjects\Projet 100h\Layout_app\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\Users\MrQuentin\AndroidStudioProjects\Projet 100h\Layout_app\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\MrQuentin\AndroidStudioProjects\Projet 100h\Layout_app\app\src\main\AndroidManifest.xml:2:1-30:12
+		ADDED from C:\Users\MrQuentin\AndroidStudioProjects\Projet 100h\Layout_app\app\src\main\AndroidManifest.xml:2:1-31:12
 		INJECTED from C:\Users\MrQuentin\AndroidStudioProjects\Projet 100h\Layout_app\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\MrQuentin\AndroidStudioProjects\Projet 100h\Layout_app\app\src\main\AndroidManifest.xml:2:11-69
@@ -52,13 +64,25 @@ ADDED from C:\Users\MrQuentin\AndroidStudioProjects\Projet 100h\Layout_app\app\s
 	android:name
 		ADDED from C:\Users\MrQuentin\AndroidStudioProjects\Projet 100h\Layout_app\app\src\main\AndroidManifest.xml:8:22-78
 application
-ADDED from C:\Users\MrQuentin\AndroidStudioProjects\Projet 100h\Layout_app\app\src\main\AndroidManifest.xml:10:5-28:19
+ADDED from C:\Users\MrQuentin\AndroidStudioProjects\Projet 100h\Layout_app\app\src\main\AndroidManifest.xml:10:5-29:19
 MERGED from [com.android.support:design:26.1.0] C:\Users\MrQuentin\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\78a61685a1f7901c53f4202121afb4b8\AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:design:26.1.0] C:\Users\MrQuentin\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\78a61685a1f7901c53f4202121afb4b8\AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\MrQuentin\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\a55d47cfee61aba4de66769d52606fc6\AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\MrQuentin\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\a55d47cfee61aba4de66769d52606fc6\AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:transition:26.1.0] C:\Users\MrQuentin\.gradle\caches\transforms-1\files-1.1\transition-26.1.0.aar\4ac868cb41c38e09028a30d74e294ff8\AndroidManifest.xml:22:5-26:19
 MERGED from [com.android.support:transition:26.1.0] C:\Users\MrQuentin\.gradle\caches\transforms-1\files-1.1\transition-26.1.0.aar\4ac868cb41c38e09028a30d74e294ff8\AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-places:12.0.0] C:\Users\MrQuentin\.gradle\caches\transforms-1\files-1.1\play-services-places-12.0.0.aar\bfb15b05b1c9e5e4d4ee3e5fbd7a796c\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-places:12.0.0] C:\Users\MrQuentin\.gradle\caches\transforms-1\files-1.1\play-services-places-12.0.0.aar\bfb15b05b1c9e5e4d4ee3e5fbd7a796c\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-maps:12.0.0] C:\Users\MrQuentin\.gradle\caches\transforms-1\files-1.1\play-services-maps-12.0.0.aar\37ca6e8601fc661a11b13b10eb79a31b\AndroidManifest.xml:30:5-20
+MERGED from [com.google.android.gms:play-services-maps:12.0.0] C:\Users\MrQuentin\.gradle\caches\transforms-1\files-1.1\play-services-maps-12.0.0.aar\37ca6e8601fc661a11b13b10eb79a31b\AndroidManifest.xml:30:5-20
+MERGED from [com.google.android.gms:play-services-location:12.0.0] C:\Users\MrQuentin\.gradle\caches\transforms-1\files-1.1\play-services-location-12.0.0.aar\c4faba466c196c32cb2ae407093903c9\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-location:12.0.0] C:\Users\MrQuentin\.gradle\caches\transforms-1\files-1.1\play-services-location-12.0.0.aar\c4faba466c196c32cb2ae407093903c9\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-base:12.0.0] C:\Users\MrQuentin\.gradle\caches\transforms-1\files-1.1\play-services-base-12.0.0.aar\70f9ec01ba5af9031e2b74fab49886fe\AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:12.0.0] C:\Users\MrQuentin\.gradle\caches\transforms-1\files-1.1\play-services-base-12.0.0.aar\70f9ec01ba5af9031e2b74fab49886fe\AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-tasks:12.0.0] C:\Users\MrQuentin\.gradle\caches\transforms-1\files-1.1\play-services-tasks-12.0.0.aar\43ff73575c4790f5868694962f6b0d85\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:12.0.0] C:\Users\MrQuentin\.gradle\caches\transforms-1\files-1.1\play-services-tasks-12.0.0.aar\43ff73575c4790f5868694962f6b0d85\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-basement:12.0.0] C:\Users\MrQuentin\.gradle\caches\transforms-1\files-1.1\play-services-basement-12.0.0.aar\e5f0f54b102d7dac9ada31c1ca3a82e3\AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:12.0.0] C:\Users\MrQuentin\.gradle\caches\transforms-1\files-1.1\play-services-basement-12.0.0.aar\e5f0f54b102d7dac9ada31c1ca3a82e3\AndroidManifest.xml:22:5-26:19
 MERGED from [com.android.support:support-v4:26.1.0] C:\Users\MrQuentin\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\23bb214eabf39961e90a442befc14f8f\AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:support-v4:26.1.0] C:\Users\MrQuentin\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\23bb214eabf39961e90a442befc14f8f\AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\MrQuentin\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\11f1a9c44858fea4e279c429cdd96f54\AndroidManifest.xml:9:5-20
@@ -79,8 +103,20 @@ MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\MrQuentin\.gra
 MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\MrQuentin\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\304e83a16b6dc437416f387dc9899df6\AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:support-compat:26.1.0] C:\Users\MrQuentin\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\e4d2de591de1f8826ac202f0d1ee5006\AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:support-compat:26.1.0] C:\Users\MrQuentin\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\e4d2de591de1f8826ac202f0d1ee5006\AndroidManifest.xml:25:5-29:19
+MERGED from [com.google.android.gms:play-services-maps-license:12.0.0] C:\Users\MrQuentin\.gradle\caches\transforms-1\files-1.1\play-services-maps-license-12.0.0.aar\455c6eb8a5c9a00d137279e7f4043de1\AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.android.gms:play-services-maps-license:12.0.0] C:\Users\MrQuentin\.gradle\caches\transforms-1\files-1.1\play-services-maps-license-12.0.0.aar\455c6eb8a5c9a00d137279e7f4043de1\AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.android.gms:play-services-location-license:12.0.0] C:\Users\MrQuentin\.gradle\caches\transforms-1\files-1.1\play-services-location-license-12.0.0.aar\d984b1f339c16dc36583c07569871b4f\AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.android.gms:play-services-location-license:12.0.0] C:\Users\MrQuentin\.gradle\caches\transforms-1\files-1.1\play-services-location-license-12.0.0.aar\d984b1f339c16dc36583c07569871b4f\AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.android.gms:play-services-places-license:12.0.0] C:\Users\MrQuentin\.gradle\caches\transforms-1\files-1.1\play-services-places-license-12.0.0.aar\d9e2b54924a2c74d3cad3453adf7c8aa\AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.android.gms:play-services-places-license:12.0.0] C:\Users\MrQuentin\.gradle\caches\transforms-1\files-1.1\play-services-places-license-12.0.0.aar\d9e2b54924a2c74d3cad3453adf7c8aa\AndroidManifest.xml:5:5-6:19
 MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\MrQuentin\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\d538c328c63afeeefe49b630ad158ca4\AndroidManifest.xml:24:5-28:19
 MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\MrQuentin\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\d538c328c63afeeefe49b630ad158ca4\AndroidManifest.xml:24:5-28:19
+MERGED from [com.google.android.gms:play-services-base-license:12.0.0] C:\Users\MrQuentin\.gradle\caches\transforms-1\files-1.1\play-services-base-license-12.0.0.aar\6c19aa99c4c54ca2a287731bb19d43bc\AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.android.gms:play-services-base-license:12.0.0] C:\Users\MrQuentin\.gradle\caches\transforms-1\files-1.1\play-services-base-license-12.0.0.aar\6c19aa99c4c54ca2a287731bb19d43bc\AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.android.gms:play-services-basement-license:12.0.0] C:\Users\MrQuentin\.gradle\caches\transforms-1\files-1.1\play-services-basement-license-12.0.0.aar\d935a2edbe66b4b97c1f925f606c57e6\AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.android.gms:play-services-basement-license:12.0.0] C:\Users\MrQuentin\.gradle\caches\transforms-1\files-1.1\play-services-basement-license-12.0.0.aar\d935a2edbe66b4b97c1f925f606c57e6\AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.android.gms:play-services-tasks-license:12.0.0] C:\Users\MrQuentin\.gradle\caches\transforms-1\files-1.1\play-services-tasks-license-12.0.0.aar\6d04094eb24c33c59d499ace559c12de\AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.android.gms:play-services-tasks-license:12.0.0] C:\Users\MrQuentin\.gradle\caches\transforms-1\files-1.1\play-services-tasks-license-12.0.0.aar\6d04094eb24c33c59d499ace559c12de\AndroidManifest.xml:5:5-6:19
 	android:supportsRtl
 		ADDED from C:\Users\MrQuentin\AndroidStudioProjects\Projet 100h\Layout_app\app\src\main\AndroidManifest.xml:15:9-35
 	android:label
@@ -93,14 +129,14 @@ MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\MrQuentin\.gradle\ca
 		ADDED from C:\Users\MrQuentin\AndroidStudioProjects\Projet 100h\Layout_app\app\src\main\AndroidManifest.xml:11:9-35
 	android:theme
 		ADDED from C:\Users\MrQuentin\AndroidStudioProjects\Projet 100h\Layout_app\app\src\main\AndroidManifest.xml:16:9-40
-activity#com.example.mrquentin.drawertest.SplActivity
+activity#com.example.mrquentin.drawertest.SplashActivity.SplActivity
 ADDED from C:\Users\MrQuentin\AndroidStudioProjects\Projet 100h\Layout_app\app\src\main\AndroidManifest.xml:17:9-24:20
 	android:screenOrientation
 		ADDED from C:\Users\MrQuentin\AndroidStudioProjects\Projet 100h\Layout_app\app\src\main\AndroidManifest.xml:18:13-49
 	android:theme
 		ADDED from C:\Users\MrQuentin\AndroidStudioProjects\Projet 100h\Layout_app\app\src\main\AndroidManifest.xml:19:13-56
 	android:name
-		ADDED from C:\Users\MrQuentin\AndroidStudioProjects\Projet 100h\Layout_app\app\src\main\AndroidManifest.xml:17:19-46
+		ADDED from C:\Users\MrQuentin\AndroidStudioProjects\Projet 100h\Layout_app\app\src\main\AndroidManifest.xml:17:19-61
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
 ADDED from C:\Users\MrQuentin\AndroidStudioProjects\Projet 100h\Layout_app\app\src\main\AndroidManifest.xml:20:13-23:29
 action#android.intent.action.MAIN
@@ -119,6 +155,10 @@ ADDED from C:\Users\MrQuentin\AndroidStudioProjects\Projet 100h\Layout_app\app\s
 		ADDED from C:\Users\MrQuentin\AndroidStudioProjects\Projet 100h\Layout_app\app\src\main\AndroidManifest.xml:27:13-56
 	android:name
 		ADDED from C:\Users\MrQuentin\AndroidStudioProjects\Projet 100h\Layout_app\app\src\main\AndroidManifest.xml:25:19-47
+activity#com.example.mrquentin.drawertest.BluetoothTabActivity
+ADDED from C:\Users\MrQuentin\AndroidStudioProjects\Projet 100h\Layout_app\app\src\main\AndroidManifest.xml:28:9-57
+	android:name
+		ADDED from C:\Users\MrQuentin\AndroidStudioProjects\Projet 100h\Layout_app\app\src\main\AndroidManifest.xml:28:19-55
 uses-sdk
 INJECTED from C:\Users\MrQuentin\AndroidStudioProjects\Projet 100h\Layout_app\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\MrQuentin\AndroidStudioProjects\Projet 100h\Layout_app\app\src\main\AndroidManifest.xml
@@ -129,6 +169,18 @@ MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\MrQuentin\.gradle
 MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\MrQuentin\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\a55d47cfee61aba4de66769d52606fc6\AndroidManifest.xml:21:5-23:78
 MERGED from [com.android.support:transition:26.1.0] C:\Users\MrQuentin\.gradle\caches\transforms-1\files-1.1\transition-26.1.0.aar\4ac868cb41c38e09028a30d74e294ff8\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:transition:26.1.0] C:\Users\MrQuentin\.gradle\caches\transforms-1\files-1.1\transition-26.1.0.aar\4ac868cb41c38e09028a30d74e294ff8\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-places:12.0.0] C:\Users\MrQuentin\.gradle\caches\transforms-1\files-1.1\play-services-places-12.0.0.aar\bfb15b05b1c9e5e4d4ee3e5fbd7a796c\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-places:12.0.0] C:\Users\MrQuentin\.gradle\caches\transforms-1\files-1.1\play-services-places-12.0.0.aar\bfb15b05b1c9e5e4d4ee3e5fbd7a796c\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-maps:12.0.0] C:\Users\MrQuentin\.gradle\caches\transforms-1\files-1.1\play-services-maps-12.0.0.aar\37ca6e8601fc661a11b13b10eb79a31b\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-maps:12.0.0] C:\Users\MrQuentin\.gradle\caches\transforms-1\files-1.1\play-services-maps-12.0.0.aar\37ca6e8601fc661a11b13b10eb79a31b\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-location:12.0.0] C:\Users\MrQuentin\.gradle\caches\transforms-1\files-1.1\play-services-location-12.0.0.aar\c4faba466c196c32cb2ae407093903c9\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-location:12.0.0] C:\Users\MrQuentin\.gradle\caches\transforms-1\files-1.1\play-services-location-12.0.0.aar\c4faba466c196c32cb2ae407093903c9\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-base:12.0.0] C:\Users\MrQuentin\.gradle\caches\transforms-1\files-1.1\play-services-base-12.0.0.aar\70f9ec01ba5af9031e2b74fab49886fe\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:12.0.0] C:\Users\MrQuentin\.gradle\caches\transforms-1\files-1.1\play-services-base-12.0.0.aar\70f9ec01ba5af9031e2b74fab49886fe\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-tasks:12.0.0] C:\Users\MrQuentin\.gradle\caches\transforms-1\files-1.1\play-services-tasks-12.0.0.aar\43ff73575c4790f5868694962f6b0d85\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:12.0.0] C:\Users\MrQuentin\.gradle\caches\transforms-1\files-1.1\play-services-tasks-12.0.0.aar\43ff73575c4790f5868694962f6b0d85\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-basement:12.0.0] C:\Users\MrQuentin\.gradle\caches\transforms-1\files-1.1\play-services-basement-12.0.0.aar\e5f0f54b102d7dac9ada31c1ca3a82e3\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:12.0.0] C:\Users\MrQuentin\.gradle\caches\transforms-1\files-1.1\play-services-basement-12.0.0.aar\e5f0f54b102d7dac9ada31c1ca3a82e3\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-v4:26.1.0] C:\Users\MrQuentin\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\23bb214eabf39961e90a442befc14f8f\AndroidManifest.xml:21:5-23:54
 MERGED from [com.android.support:support-v4:26.1.0] C:\Users\MrQuentin\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\23bb214eabf39961e90a442befc14f8f\AndroidManifest.xml:21:5-23:54
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\MrQuentin\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\11f1a9c44858fea4e279c429cdd96f54\AndroidManifest.xml:5:5-7:41
@@ -191,6 +243,40 @@ MERGED from [com.android.support:support-compat:26.1.0] C:\Users\MrQuentin\.grad
 		ADDED from [com.android.support:design:26.1.0] C:\Users\MrQuentin\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\78a61685a1f7901c53f4202121afb4b8\AndroidManifest.xml:28:13-35
 	android:name
 		ADDED from [com.android.support:design:26.1.0] C:\Users\MrQuentin\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\78a61685a1f7901c53f4202121afb4b8\AndroidManifest.xml:27:13-51
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [com.google.android.gms:play-services-maps:12.0.0] C:\Users\MrQuentin\.gradle\caches\transforms-1\files-1.1\play-services-maps-12.0.0.aar\37ca6e8601fc661a11b13b10eb79a31b\AndroidManifest.xml:23:5-79
+	android:name
+		ADDED from [com.google.android.gms:play-services-maps:12.0.0] C:\Users\MrQuentin\.gradle\caches\transforms-1\files-1.1\play-services-maps-12.0.0.aar\37ca6e8601fc661a11b13b10eb79a31b\AndroidManifest.xml:23:22-76
+uses-permission#android.permission.INTERNET
+ADDED from [com.google.android.gms:play-services-maps:12.0.0] C:\Users\MrQuentin\.gradle\caches\transforms-1\files-1.1\play-services-maps-12.0.0.aar\37ca6e8601fc661a11b13b10eb79a31b\AndroidManifest.xml:24:5-67
+	android:name
+		ADDED from [com.google.android.gms:play-services-maps:12.0.0] C:\Users\MrQuentin\.gradle\caches\transforms-1\files-1.1\play-services-maps-12.0.0.aar\37ca6e8601fc661a11b13b10eb79a31b\AndroidManifest.xml:24:22-64
+uses-feature#0x00020000
+ADDED from [com.google.android.gms:play-services-maps:12.0.0] C:\Users\MrQuentin\.gradle\caches\transforms-1\files-1.1\play-services-maps-12.0.0.aar\37ca6e8601fc661a11b13b10eb79a31b\AndroidManifest.xml:26:5-28:35
+	android:glEsVersion
+		ADDED from [com.google.android.gms:play-services-maps:12.0.0] C:\Users\MrQuentin\.gradle\caches\transforms-1\files-1.1\play-services-maps-12.0.0.aar\37ca6e8601fc661a11b13b10eb79a31b\AndroidManifest.xml:27:9-41
+	android:required
+		ADDED from [com.google.android.gms:play-services-maps:12.0.0] C:\Users\MrQuentin\.gradle\caches\transforms-1\files-1.1\play-services-maps-12.0.0.aar\37ca6e8601fc661a11b13b10eb79a31b\AndroidManifest.xml:28:9-32
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:12.0.0] C:\Users\MrQuentin\.gradle\caches\transforms-1\files-1.1\play-services-base-12.0.0.aar\70f9ec01ba5af9031e2b74fab49886fe\AndroidManifest.xml:23:9-26:75
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:12.0.0] C:\Users\MrQuentin\.gradle\caches\transforms-1\files-1.1\play-services-base-12.0.0.aar\70f9ec01ba5af9031e2b74fab49886fe\AndroidManifest.xml:25:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:12.0.0] C:\Users\MrQuentin\.gradle\caches\transforms-1\files-1.1\play-services-base-12.0.0.aar\70f9ec01ba5af9031e2b74fab49886fe\AndroidManifest.xml:26:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:12.0.0] C:\Users\MrQuentin\.gradle\caches\transforms-1\files-1.1\play-services-base-12.0.0.aar\70f9ec01ba5af9031e2b74fab49886fe\AndroidManifest.xml:24:13-79
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:12.0.0] C:\Users\MrQuentin\.gradle\caches\transforms-1\files-1.1\play-services-basement-12.0.0.aar\e5f0f54b102d7dac9ada31c1ca3a82e3\AndroidManifest.xml:23:9-25:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:12.0.0] C:\Users\MrQuentin\.gradle\caches\transforms-1\files-1.1\play-services-basement-12.0.0.aar\e5f0f54b102d7dac9ada31c1ca3a82e3\AndroidManifest.xml:25:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:12.0.0] C:\Users\MrQuentin\.gradle\caches\transforms-1\files-1.1\play-services-basement-12.0.0.aar\e5f0f54b102d7dac9ada31c1ca3a82e3\AndroidManifest.xml:24:13-58
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+IMPLIED from C:\Users\MrQuentin\AndroidStudioProjects\Projet 100h\Layout_app\app\src\main\AndroidManifest.xml:2:1-31:12 reason: com.google.android.gms.license has a targetSdkVersion < 4
+uses-permission#android.permission.READ_PHONE_STATE
+IMPLIED from C:\Users\MrQuentin\AndroidStudioProjects\Projet 100h\Layout_app\app\src\main\AndroidManifest.xml:2:1-31:12 reason: com.google.android.gms.license has a targetSdkVersion < 4
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+IMPLIED from C:\Users\MrQuentin\AndroidStudioProjects\Projet 100h\Layout_app\app\src\main\AndroidManifest.xml:2:1-31:12 reason: com.google.android.gms.license requested WRITE_EXTERNAL_STORAGE
 meta-data#android.arch.lifecycle.VERSION
 ADDED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\MrQuentin\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\d538c328c63afeeefe49b630ad158ca4\AndroidManifest.xml:25:9-27:47
 	android:value

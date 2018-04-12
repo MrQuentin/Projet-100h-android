@@ -5,32 +5,27 @@
     build-mode="COLD"
     density="420dpi"
     format="10"
-    ir-eligibility="COMPATIBLE"
     plugin-version="3.0.1"
-    timestamp="1522228759378"
+    timestamp="1523287526834"
     token="-5934930591174634460"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="348" />
+        duration="0" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="26" />
+        duration="0" />
     <task
         name="verifier"
-        duration="5" />
-
-    <artifact
-        location="C:\Users\MrQuentin\AndroidStudioProjects\Projet 100h\Layout_app\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
-        type="SPLIT" />
+        duration="0" />
 
     <build
         build-mode="FULL"
-        timestamp="1522224204030"
+        timestamp="1523282458201"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="C:\Users\MrQuentin\AndroidStudioProjects\Projet 100h\Layout_app\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
@@ -48,10 +43,10 @@
             location="C:\Users\MrQuentin\AndroidStudioProjects\Projet 100h\Layout_app\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\MrQuentin\AndroidStudioProjects\Projet 100h\Layout_app\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
+            location="C:\Users\MrQuentin\AndroidStudioProjects\Projet 100h\Layout_app\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\MrQuentin\AndroidStudioProjects\Projet 100h\Layout_app\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
+            location="C:\Users\MrQuentin\AndroidStudioProjects\Projet 100h\Layout_app\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
             type="SPLIT" />
         <artifact
             location="C:\Users\MrQuentin\AndroidStudioProjects\Projet 100h\Layout_app\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
@@ -71,7 +66,40 @@
     </build>
     <build
         build-mode="COLD"
-        timestamp="1522226344453"
+        ir-eligibility="CLASS_ADDED"
+        timestamp="1523284078377"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="C:\Users\MrQuentin\AndroidStudioProjects\Projet 100h\Layout_app\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\MrQuentin\AndroidStudioProjects\Projet 100h\Layout_app\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\MrQuentin\AndroidStudioProjects\Projet 100h\Layout_app\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
+            type="SPLIT" />
+    </build>
+    <build
+        build-mode="COLD"
+        ir-eligibility="METHOD_DELETED"
+        timestamp="1523286354307"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="C:\Users\MrQuentin\AndroidStudioProjects\Projet 100h\Layout_app\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
+            type="SPLIT" />
+    </build>
+    <build
+        build-mode="COLD"
+        ir-eligibility="COMPATIBLE"
+        timestamp="1523287174380"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="C:\Users\MrQuentin\AndroidStudioProjects\Projet 100h\Layout_app\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
+            type="SPLIT" />
+    </build>
+    <build
+        build-mode="COLD"
+        timestamp="1523287284455"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="C:\Users\MrQuentin\AndroidStudioProjects\Projet 100h\Layout_app\app\build\outputs\apk\debug\app-debug.apk"
@@ -80,11 +108,15 @@
     <build
         build-mode="COLD"
         ir-eligibility="COMPATIBLE"
-        timestamp="1522228759378"
+        timestamp="1523287474497"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="C:\Users\MrQuentin\AndroidStudioProjects\Projet 100h\Layout_app\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
             type="SPLIT" />
     </build>
+    <build
+        build-mode="COLD"
+        timestamp="1523287526834"
+        verifier="COLD_SWAP_REQUESTED" />
 
 </instant-run>

@@ -5,5 +5,5 @@
     android:id="@+id/listhome"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.mrquentin.drawertest.Navigation.BluetoothFragment">
+    tools:context="com.example.mrquentin.drawertest.BluetoothActivity.BluetoothFragment">
 </ListView>
